@@ -8,14 +8,15 @@
 .body1 {
   flex: 1;
   padding: 2%;
-  /* border: solid darkblue; */
-  /* border-radius: 5%; */
 }
 .body2 {
   flex: 2;
   padding: 2%;
 }
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .name-body {
@@ -27,9 +28,6 @@ button {
   padding: 10px;
   background: transparent;
   border-radius: 5px;
-}
-
-.render-chat {
 }
 
 h3 {

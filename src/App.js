@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
-import Card from "@material-ui/core/Card";
+import { Card, CardHeader, Button } from "@material-ui/core/";
 import io from "socket.io-client";
 import "./App.css";
 
@@ -46,7 +46,8 @@ function App() {
     <div className="App">
       <Card className="body1">
         <form onSubmit={onSubmitMessage}>
-          <h1>LamaChat</h1>
+          {/* <h1>LamaChat</h1> */}
+          <CardHeader title="LamaChat" />
           <div className="name-body">
             <TextField
               name="name"
@@ -66,11 +67,13 @@ function App() {
             />
           </div>
           <button>보내기</button>
+          {/* <Button>보내기</Button> */}
         </form>
       </Card>
       <Card className="body2">
         <div className="render-chat">
-          <h1>기록</h1>
+          {/* <h1>기록</h1> */}
+          <CardHeader title="기록" />
           {renderChat()}
         </div>
       </Card>
